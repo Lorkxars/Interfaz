@@ -27,20 +27,41 @@ public class Portada extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jButton2 = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jPanel4 = new javax.swing.JPanel();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setMinimumSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
+
+        jPanel1.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jPanel1.setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 86)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Bienvenidos");
         jLabel1.setToolTipText("");
-        getContentPane().add(jLabel1);
+        jPanel1.add(jLabel1);
         jLabel1.setBounds(350, 90, 450, 170);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
@@ -50,46 +71,122 @@ public class Portada extends javax.swing.JFrame {
                 jButton1MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton1);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
         jButton1.setBounds(200, 320, 740, 190);
-        getContentPane().add(jLabel2);
+        jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 1170, 630);
 
-        jPanel1.setVisible(false);
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-        jLabel3.setText("Prueba");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(458, 458, 458)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(491, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(234, Short.MAX_VALUE))
-        );
-
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 1170, 630);
+        jPanel1.setBounds(400, 200, 1170, 630);
+
+        jPanel2.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jPanel2.setVisible(false);
+        jPanel2.setLayout(null);
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jLabel3.setText("Usuario");
+        jPanel2.add(jLabel3);
+        jLabel3.setBounds(100, 130, 250, 60);
+        jPanel2.add(jTextField1);
+        jTextField1.setBounds(560, 130, 520, 70);
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jLabel4.setText("Contraseña");
+        jPanel2.add(jLabel4);
+        jLabel4.setBounds(100, 330, 370, 60);
+
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
+        jPasswordField1.setText("jPasswordField1");
+        jPanel2.add(jPasswordField1);
+        jPasswordField1.setBounds(560, 320, 520, 80);
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jButton2.setText("Aceptar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+        jPanel2.add(jButton2);
+        jButton2.setBounds(450, 480, 310, 100);
+
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(400, 200, 1170, 630);
+
+        jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jPanel3.setVisible(false);
+        jPanel3.setLayout(null);
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jLabel5.setText("¿Qué quieres hacer hoy?");
+        jPanel3.add(jLabel5);
+        jLabel5.setBounds(160, 40, 800, 130);
+
+        jButton3.setText("División");
+        buttonGroup1.add(jButton3);
+        jPanel3.add(jButton3);
+        jButton3.setBounds(820, 240, 210, 130);
+
+        jButton4.setText("Suma ");
+        buttonGroup1.add(jButton4);
+        jPanel3.add(jButton4);
+        jButton4.setBounds(140, 240, 210, 130);
+
+        jButton5.setText("Resta");
+        buttonGroup1.add(jButton5);
+        jPanel3.add(jButton5);
+        jButton5.setBounds(360, 240, 210, 130);
+
+        jButton6.setText("Multiplicación");
+        buttonGroup1.add(jButton6);
+        jPanel3.add(jButton6);
+        jButton6.setBounds(590, 240, 210, 130);
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jButton7.setText("Tira");
+        jPanel3.add(jButton7);
+        jButton7.setBounds(480, 480, 230, 90);
+
+        getContentPane().add(jPanel3);
+        jPanel3.setBounds(400, 200, 1170, 630);
+
+        jPanel4.setLayout(null);
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
+        jButton8.setText("Ejercicios");
+        jPanel4.add(jButton8);
+        jButton8.setBounds(0, 320, 1170, 310);
+
+        jButton9.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
+        jButton9.setText("Historial");
+        jPanel4.add(jButton9);
+        jButton9.setBounds(0, 0, 1170, 320);
+
+        getContentPane().add(jPanel4);
+        jPanel4.setBounds(0, 0, 1170, 630);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        jLabel1.setVisible(false);
-        jLabel2.setVisible(false);
-        jButton1.setVisible(false);
-        jLabel3.setVisible(true);
-        jPanel1.setVisible(true);
+        jPanel1.setVisible(false);
+        jPanel2.setVisible(true);
+       
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        jPanel2.setVisible(false);
+        jPanel3.setVisible(true);
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -127,10 +224,26 @@ public class Portada extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
