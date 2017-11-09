@@ -35,11 +35,11 @@ public class Profesor extends javax.swing.JFrame {
         Ejercicios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
         setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
 
+        Usuarios.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Usuarios.setText("Usuarios");
         Usuarios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -52,8 +52,10 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
 
+        Historial.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Historial.setText("Historial");
 
+        Ejercicios.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Ejercicios.setText("Ejercicios");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
