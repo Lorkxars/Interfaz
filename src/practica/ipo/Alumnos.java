@@ -87,7 +87,10 @@ public class Alumnos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
-        
+        Operaciones p = new Operaciones();//Creamos la siguiente ventana y cerramos esta
+           p.setVisible(true);
+           this.setVisible(false);
+           dispose();
         
     }//GEN-LAST:event_jButton8MouseClicked
 
