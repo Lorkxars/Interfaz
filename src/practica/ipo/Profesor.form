@@ -3,6 +3,10 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1680, 1050]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -34,11 +38,16 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1680, 1050]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="Ejercicios" pref="1196" max="32767" attributes="0"/>
+              <Component id="Ejercicios" max="32767" attributes="0"/>
               <Component id="Historial" max="32767" attributes="0"/>
               <Component id="Usuarios" alignment="0" max="32767" attributes="0"/>
           </Group>
@@ -46,11 +55,11 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="Usuarios" min="-2" pref="233" max="-2" attributes="0"/>
+                  <Component id="Usuarios" min="-2" pref="340" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="Historial" min="-2" pref="233" max="-2" attributes="0"/>
+                  <Component id="Historial" min="-2" pref="340" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="Ejercicios" min="-2" pref="235" max="-2" attributes="0"/>
+                  <Component id="Ejercicios" min="-2" pref="340" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>

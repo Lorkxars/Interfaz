@@ -5,6 +5,8 @@
  */
 package practica.ipo;
 
+import java.awt.event.WindowEvent;
+
 /**
  *
  * @author david
@@ -33,6 +35,10 @@ public class Profesor extends javax.swing.JFrame {
         Ejercicios = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
+
+        jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
 
         Usuarios.setText("Usuarios");
         Usuarios.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -54,18 +60,18 @@ public class Profesor extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Ejercicios, javax.swing.GroupLayout.DEFAULT_SIZE, 1196, Short.MAX_VALUE)
+            .addComponent(Ejercicios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(Historial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(Usuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(Usuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Usuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Historial, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Historial, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -88,9 +94,10 @@ public class Profesor extends javax.swing.JFrame {
     }//GEN-LAST:event_UsuariosActionPerformed
 
     private void UsuariosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_UsuariosMouseClicked
-           Usuarios p = new Usuarios();
+           Usuarios p = new Usuarios();//Creamos la siguiente ventana y cerramos esta
            p.setVisible(true);
            this.setVisible(false);
+           dispose();
     }//GEN-LAST:event_UsuariosMouseClicked
 
     /**
