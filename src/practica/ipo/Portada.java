@@ -46,6 +46,7 @@ public class Portada extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
+        jPanel4.setVisible(false);
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
 
@@ -159,6 +160,11 @@ public class Portada extends javax.swing.JFrame {
 
         jButton8.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
         jButton8.setText("Ejercicios");
+        jButton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton8MouseClicked(evt);
+            }
+        });
         jPanel4.add(jButton8);
         jButton8.setBounds(0, 320, 1170, 310);
 
@@ -168,7 +174,7 @@ public class Portada extends javax.swing.JFrame {
         jButton9.setBounds(0, 0, 1170, 320);
 
         getContentPane().add(jPanel4);
-        jPanel4.setBounds(0, 0, 1170, 630);
+        jPanel4.setBounds(400, 200, 1170, 630);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -185,8 +191,13 @@ public class Portada extends javax.swing.JFrame {
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         jPanel2.setVisible(false);
-        jPanel3.setVisible(true);
+        jPanel4.setVisible(true);
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton8MouseClicked
+        jPanel4.setVisible(false);
+        jPanel3.setVisible(true);
+    }//GEN-LAST:event_jButton8MouseClicked
 
     /**
      * @param args the command line arguments
