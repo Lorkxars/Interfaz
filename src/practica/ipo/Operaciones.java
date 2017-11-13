@@ -34,6 +34,8 @@ public class Operaciones extends javax.swing.JFrame {
         Resta = new javax.swing.JButton();
         Multiplicacion = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -57,7 +59,7 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Division);
-        Division.setBounds(830, 570, 830, 440);
+        Division.setBounds(830, 570, 730, 440);
 
         Suma.setBackground(new java.awt.Color(145, 206, 189));
         Suma.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -73,7 +75,7 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Suma);
-        Suma.setBounds(0, 130, 830, 440);
+        Suma.setBounds(100, 130, 730, 440);
 
         Resta.setBackground(new java.awt.Color(253, 223, 107));
         Resta.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -84,7 +86,7 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Resta);
-        Resta.setBounds(830, 130, 830, 440);
+        Resta.setBounds(830, 130, 730, 440);
 
         Multiplicacion.setBackground(new java.awt.Color(139, 226, 255));
         Multiplicacion.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -95,12 +97,20 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Multiplicacion);
-        Multiplicacion.setBounds(0, 570, 830, 440);
+        Multiplicacion.setBounds(100, 570, 730, 440);
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jButton7.setText("Tira");
         jPanel3.add(jButton7);
         jButton7.setBounds(480, 480, 230, 90);
+
+        jButton1.setText("jButton1");
+        jPanel3.add(jButton1);
+        jButton1.setBounds(1560, 130, 100, 880);
+
+        jButton2.setText("jButton1");
+        jPanel3.add(jButton2);
+        jButton2.setBounds(0, 130, 100, 880);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -198,6 +208,8 @@ public class Operaciones extends javax.swing.JFrame {
     private javax.swing.JButton Multiplicacion;
     private javax.swing.JButton Resta;
     private javax.swing.JButton Suma;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel3;

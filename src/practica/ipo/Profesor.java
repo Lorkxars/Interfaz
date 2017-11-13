@@ -33,14 +33,18 @@ public class Profesor extends javax.swing.JFrame {
         Usuarios = new javax.swing.JButton();
         Historial = new javax.swing.JButton();
         Ejercicios = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
+        jPanel1.setLayout(null);
 
         Usuarios.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Usuarios.setText("Usuarios");
+        Usuarios.setFocusable(false);
         Usuarios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 UsuariosMouseClicked(evt);
@@ -51,31 +55,26 @@ public class Profesor extends javax.swing.JFrame {
                 UsuariosActionPerformed(evt);
             }
         });
+        jPanel1.add(Usuarios);
+        Usuarios.setBounds(100, 5, 1480, 340);
 
         Historial.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Historial.setText("Historial");
+        jPanel1.add(Historial);
+        Historial.setBounds(100, 350, 1480, 340);
 
         Ejercicios.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Ejercicios.setText("Ejercicios");
+        jPanel1.add(Ejercicios);
+        Ejercicios.setBounds(100, 695, 1480, 340);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Ejercicios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Historial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Usuarios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(Usuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Historial, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Ejercicios, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jButton1.setText("jButton1");
+        jPanel1.add(jButton1);
+        jButton1.setBounds(1580, 5, 100, 1030);
+
+        jButton2.setText("jButton1");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(0, 5, 100, 1030);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,7 +84,7 @@ public class Profesor extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1054, Short.MAX_VALUE)
         );
 
         pack();
@@ -141,6 +140,8 @@ public class Profesor extends javax.swing.JFrame {
     private javax.swing.JButton Ejercicios;
     private javax.swing.JButton Historial;
     private javax.swing.JButton Usuarios;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

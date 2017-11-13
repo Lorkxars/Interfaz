@@ -30,6 +30,8 @@ public class Alumnos extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -47,7 +49,7 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton8);
-        jButton8.setBounds(0, 510, 1665, 510);
+        jButton8.setBounds(100, 510, 1465, 510);
 
         jButton9.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
         jButton9.setText("Historial");
@@ -65,7 +67,15 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton9);
-        jButton9.setBounds(0, 0, 1665, 510);
+        jButton9.setBounds(100, 0, 1465, 510);
+
+        jButton1.setText("jButton1");
+        jPanel4.add(jButton1);
+        jButton1.setBounds(0, 0, 100, 1020);
+
+        jButton2.setText("jButton2");
+        jPanel4.add(jButton2);
+        jButton2.setBounds(1565, 0, 100, 1020);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -146,6 +156,8 @@ public class Alumnos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel4;
