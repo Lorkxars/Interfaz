@@ -29,52 +29,73 @@ public class Operaciones extends javax.swing.JFrame {
 
         jPanel3 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        Division = new javax.swing.JButton();
+        Suma = new javax.swing.JButton();
+        Resta = new javax.swing.JButton();
+        Multiplicacion = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jPanel3.setLayout(null);
 
+        jLabel5.setBackground(new java.awt.Color(253, 248, 174));
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(250, 253, 161));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("¿Qué quieres hacer hoy?");
         jPanel3.add(jLabel5);
         jLabel5.setBounds(0, 0, 1680, 130);
 
-        jButton3.setBackground(new java.awt.Color(255, 133, 255));
-        jButton3.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jButton3.setText("División");
-        jPanel3.add(jButton3);
-        jButton3.setBounds(830, 570, 830, 440);
-
-        jButton4.setBackground(new java.awt.Color(145, 206, 189));
-        jButton4.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jButton4.setText("Suma ");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+        Division.setBackground(new java.awt.Color(255, 133, 255));
+        Division.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
+        Division.setText("División");
+        Division.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                DivisionMouseClicked(evt);
             }
         });
-        jPanel3.add(jButton4);
-        jButton4.setBounds(0, 130, 830, 440);
+        jPanel3.add(Division);
+        Division.setBounds(830, 570, 830, 440);
 
-        jButton5.setBackground(new java.awt.Color(253, 223, 107));
-        jButton5.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jButton5.setText("Resta");
-        jPanel3.add(jButton5);
-        jButton5.setBounds(830, 130, 830, 440);
+        Suma.setBackground(new java.awt.Color(145, 206, 189));
+        Suma.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
+        Suma.setText("Suma ");
+        Suma.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SumaMouseClicked(evt);
+            }
+        });
+        Suma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SumaActionPerformed(evt);
+            }
+        });
+        jPanel3.add(Suma);
+        Suma.setBounds(0, 130, 830, 440);
 
-        jButton6.setBackground(new java.awt.Color(139, 226, 255));
-        jButton6.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jButton6.setText("Multiplicación");
-        jPanel3.add(jButton6);
-        jButton6.setBounds(0, 570, 830, 440);
+        Resta.setBackground(new java.awt.Color(253, 223, 107));
+        Resta.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
+        Resta.setText("Resta");
+        Resta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                RestaMouseClicked(evt);
+            }
+        });
+        jPanel3.add(Resta);
+        Resta.setBounds(830, 130, 830, 440);
+
+        Multiplicacion.setBackground(new java.awt.Color(139, 226, 255));
+        Multiplicacion.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
+        Multiplicacion.setText("Multiplicación");
+        Multiplicacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MultiplicacionMouseClicked(evt);
+            }
+        });
+        jPanel3.add(Multiplicacion);
+        Multiplicacion.setBounds(0, 570, 830, 440);
 
         jButton7.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jButton7.setText("Tira");
@@ -105,9 +126,37 @@ public class Operaciones extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void SumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SumaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_SumaActionPerformed
+
+    private void SumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SumaMouseClicked
+        Operacion1 p = new Operacion1();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_SumaMouseClicked
+
+    private void RestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RestaMouseClicked
+        Operacion1 p = new Operacion1();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_RestaMouseClicked
+
+    private void MultiplicacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MultiplicacionMouseClicked
+        Operacion1 p = new Operacion1();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_MultiplicacionMouseClicked
+
+    private void DivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DivisionMouseClicked
+        Operacion1 p = new Operacion1();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_DivisionMouseClicked
 
     /**
      * @param args the command line arguments
@@ -145,10 +194,10 @@ public class Operaciones extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton Division;
+    private javax.swing.JButton Multiplicacion;
+    private javax.swing.JButton Resta;
+    private javax.swing.JButton Suma;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel3;

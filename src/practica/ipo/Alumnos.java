@@ -54,6 +54,11 @@ public class Alumnos extends javax.swing.JFrame {
         jButton9.setMaximumSize(new java.awt.Dimension(1680, 525));
         jButton9.setMinimumSize(new java.awt.Dimension(1680, 525));
         jButton9.setPreferredSize(new java.awt.Dimension(1680, 525));
+        jButton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton9MouseClicked(evt);
+            }
+        });
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -97,6 +102,13 @@ public class Alumnos extends javax.swing.JFrame {
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MouseClicked
+        Historial p = new Historial();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton9MouseClicked
 
     /**
      * @param args the command line arguments

@@ -15,7 +15,9 @@ public class PracticaIPO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Estoy harto de buscar que se ejecuta, voy a llamar a la portada desde aqui
+        Portada p = new Portada();
+        p.setVisible(true);
     }
     
 }
