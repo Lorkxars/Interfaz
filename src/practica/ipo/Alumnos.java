@@ -16,6 +16,12 @@ public class Alumnos extends javax.swing.JFrame {
      */
     public Alumnos() {
         initComponents();
+        jButton2.setEnabled(false);
+    }
+    private Operaciones auxop = null;
+    public Alumnos(Operaciones aux) {
+        initComponents();
+        auxop = aux;
     }
 
     /**
@@ -70,10 +76,20 @@ public class Alumnos extends javax.swing.JFrame {
         jButton9.setBounds(100, 0, 1465, 510);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel4.add(jButton1);
         jButton1.setBounds(0, 0, 100, 1020);
 
         jButton2.setText("jButton2");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jPanel4.add(jButton2);
         jButton2.setBounds(1565, 0, 100, 1020);
 
@@ -119,6 +135,21 @@ public class Alumnos extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton9MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        if(auxop != null){
+        auxop.setVisible(true);
+        this.setVisible(false);
+        dispose();
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments

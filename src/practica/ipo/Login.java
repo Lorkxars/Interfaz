@@ -29,9 +29,9 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        User = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        Pass = new javax.swing.JPasswordField();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,18 +44,18 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Usuario");
         jPanel2.add(jLabel3);
         jLabel3.setBounds(100, 130, 250, 60);
-        jPanel2.add(jTextField1);
-        jTextField1.setBounds(560, 130, 520, 70);
+        jPanel2.add(User);
+        User.setBounds(560, 130, 520, 70);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel4.setText("Contraseña");
         jPanel2.add(jLabel4);
         jLabel4.setBounds(100, 330, 370, 60);
 
-        jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
-        jPasswordField1.setText("jPasswordField1");
-        jPanel2.add(jPasswordField1);
-        jPasswordField1.setBounds(560, 320, 520, 80);
+        Pass.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
+        Pass.setText("jPasswordField1");
+        jPanel2.add(Pass);
+        Pass.setBounds(560, 320, 520, 80);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jButton2.setText("Aceptar");
@@ -97,10 +97,17 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Alumnos p = new Alumnos();//Creamos la siguiente ventana y cerramos esta
-           p.setVisible(true);
-           this.setVisible(false);
-           dispose();
+        if (User.getText().equals("admin")&& Pass.getText().equals("admin")){
+            Profesor p = new Profesor();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }else{
+            Alumnos p = new Alumnos();//Creamos la siguiente ventana y cerramos esta
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -143,11 +150,11 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField Pass;
+    private javax.swing.JTextField User;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

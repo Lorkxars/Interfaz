@@ -18,6 +18,12 @@ public class Profesor extends javax.swing.JFrame {
      */
     public Profesor() {
         initComponents();
+        this.jButton1.setEnabled(false);
+    }
+    private Usuarios aux = null;//Tal vez tengamos que hacer mas variables y constructores, ya se vera
+    public Profesor(Usuarios aux) {
+        this.aux = aux;
+        initComponents();
     }
 
     /**
@@ -69,10 +75,20 @@ public class Profesor extends javax.swing.JFrame {
         Ejercicios.setBounds(100, 695, 1480, 340);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(1580, 5, 100, 1030);
 
         jButton2.setText("jButton1");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(0, 5, 100, 1030);
 
@@ -100,6 +116,21 @@ public class Profesor extends javax.swing.JFrame {
            this.setVisible(false);
            dispose();
     }//GEN-LAST:event_UsuariosMouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        if(aux != null){
+        aux.setVisible(true);
+        this.setVisible(false);
+        dispose();
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
