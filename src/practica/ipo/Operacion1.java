@@ -67,25 +67,25 @@ public class Operacion1 extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("5 manzanas");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(1100, 420, 400, 37);
+        jRadioButton1.setBounds(1100, 420, 400, 33);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("2 manzanas");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(1100, 520, 400, 37);
+        jRadioButton2.setBounds(1100, 520, 400, 33);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton3.setText("3 manzanas");
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(1100, 620, 400, 37);
+        jRadioButton3.setBounds(1100, 620, 400, 33);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton4.setText("A ti que te importa");
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(1100, 720, 400, 37);
+        jRadioButton4.setBounds(1100, 720, 400, 33);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton1.setText("Aceptar");
@@ -93,6 +93,11 @@ public class Operacion1 extends javax.swing.JFrame {
         jButton1.setBounds(690, 830, 230, 120);
 
         jButton2.setText("jButton2");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(10, 240, 100, 730);
 
@@ -115,6 +120,13 @@ public class Operacion1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        Operaciones p = new Operaciones(this);
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
