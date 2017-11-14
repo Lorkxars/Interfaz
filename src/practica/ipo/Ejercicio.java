@@ -210,6 +210,11 @@ public class Ejercicio extends javax.swing.JFrame {
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton5.setText("Cancelar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton5);
         jButton5.setBounds(600, 920, 160, 50);
         jPanel1.add(jTextField8);
@@ -306,6 +311,13 @@ public class Ejercicio extends javax.swing.JFrame {
             this.jTextField8.setVisible(false);
         }
     }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        HistoProfe p = new HistoProfe();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton5MouseClicked
 
     /**
      * @param args the command line arguments

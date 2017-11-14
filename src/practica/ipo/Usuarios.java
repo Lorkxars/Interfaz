@@ -18,10 +18,15 @@ public class Usuarios extends javax.swing.JFrame {
         initComponents();
         jButton1.setEnabled(false);
     }
-    private EditarAlumno aux = null;
+    private EditarAlumno auxal = null;
         public Usuarios(EditarAlumno aux) {
         initComponents();
-        this.aux = aux;
+        this.auxal = aux;
+    }
+    private HistoProfe auxhpr = null;
+        public Usuarios(HistoProfe aux) {
+        initComponents();
+        this.auxhpr = aux;
     }
 
     /**
@@ -100,6 +105,11 @@ public class Usuarios extends javax.swing.JFrame {
             String[] strings = { "HUEVOS" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        jList4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList4MouseClicked(evt);
+            }
         });
         jScrollPane4.setViewportView(jList4);
 
@@ -200,12 +210,25 @@ public class Usuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_jList1MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        if(aux != null){//Miramos de donde venimos para decidir a donde vamos
-            aux.setVisible(true);
+        if(auxal != null){//Miramos de donde venimos para decidir a donde vamos
+            auxal.setVisible(true);
             this.setVisible(false);
             dispose();
+            auxhpr = null;
+        }else if(auxhpr != null){//Miramos de donde venimos para decidir a donde vamos
+            auxhpr.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            auxal = null;
         }
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jList4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList4MouseClicked
+        HistoProfe p = new HistoProfe();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jList4MouseClicked
 
     /**
      * @param args the command line arguments
