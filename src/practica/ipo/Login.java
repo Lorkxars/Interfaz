@@ -50,7 +50,7 @@ public class Login extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel4.setText("Contraseña");
         jPanel2.add(jLabel4);
-        jLabel4.setBounds(100, 330, 400, 60);
+        jLabel4.setBounds(100, 330, 450, 60);
 
         Pass.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
         Pass.setText("jPasswordField1");
@@ -70,7 +70,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel2.add(jButton2);
-        jButton2.setBounds(450, 480, 310, 100);
+        jButton2.setBounds(450, 480, 360, 130);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

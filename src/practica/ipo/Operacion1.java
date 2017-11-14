@@ -37,6 +37,8 @@ public class Operacion1 extends javax.swing.JFrame {
         jRadioButton3 = new javax.swing.JRadioButton();
         jRadioButton4 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -51,49 +53,58 @@ public class Operacion1 extends javax.swing.JFrame {
         jLabel1.setBounds(725, 50, 230, 100);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Si tengo 8 manzanas y regalo 5. ¿Cuántas manzanas me quedan?");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(100, 240, 1480, 100);
+        jLabel2.setBounds(120, 240, 1480, 100);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         jLabel3.setText("Pruebaaaaaaa");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(100, 390, 800, 390);
+        jLabel3.setBounds(120, 390, 800, 390);
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("5 manzanas");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(1000, 420, 400, 37);
+        jRadioButton1.setBounds(1100, 420, 400, 37);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("2 manzanas");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(1000, 520, 400, 37);
+        jRadioButton2.setBounds(1100, 520, 400, 37);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton3.setText("3 manzanas");
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(1000, 620, 400, 37);
+        jRadioButton3.setBounds(1100, 620, 400, 37);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton4.setText("A ti que te importa");
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(1000, 720, 400, 37);
+        jRadioButton4.setBounds(1100, 720, 400, 37);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton1.setText("Aceptar");
         jPanel1.add(jButton1);
         jButton1.setBounds(690, 830, 230, 120);
 
+        jButton2.setText("jButton2");
+        jPanel1.add(jButton2);
+        jButton2.setBounds(10, 240, 100, 730);
+
+        jButton3.setText("jButton3");
+        jPanel1.add(jButton3);
+        jButton3.setBounds(1550, 240, 100, 730);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1315, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1612, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,6 +154,8 @@ public class Operacion1 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
