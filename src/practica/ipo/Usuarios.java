@@ -224,7 +224,7 @@ public class Usuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jList4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList4MouseClicked
-        HistoProfe p = new HistoProfe();
+        HistoProfe p = new HistoProfe(true);
         p.setVisible(true);
         this.setVisible(false);
         dispose();

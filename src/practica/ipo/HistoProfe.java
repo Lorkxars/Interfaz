@@ -14,8 +14,13 @@ public class HistoProfe extends javax.swing.JFrame {
     /**
      * Creates new form HistoProfe
      */
+    private boolean aux;
     public HistoProfe() {
         initComponents();
+    }
+    public HistoProfe(boolean aux) {
+        initComponents();
+        this.aux = aux;
     }
 
     /**
@@ -182,8 +187,13 @@ public class HistoProfe extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        Usuarios p = new Usuarios(this);
-        p.setVisible(true);
+        if(aux){
+            Usuarios p = new Usuarios(this);
+             p.setVisible(true);
+        }else{
+            Profesor p = new Profesor(this);
+             p.setVisible(true);
+        }
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton1MouseClicked
