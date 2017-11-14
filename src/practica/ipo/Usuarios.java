@@ -16,6 +16,12 @@ public class Usuarios extends javax.swing.JFrame {
      */
     public Usuarios() {
         initComponents();
+        jButton1.setEnabled(false);
+    }
+    private EditarAlumno aux = null;
+        public Usuarios(EditarAlumno aux) {
+        initComponents();
+        this.aux = aux;
     }
 
     /**
@@ -59,6 +65,11 @@ public class Usuarios extends javax.swing.JFrame {
             String[] strings = { "RELLENOS" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        jList1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList1MouseClicked(evt);
+            }
         });
         jScrollPane1.setViewportView(jList1);
 
@@ -116,6 +127,11 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel4.setBounds(560, 40, 220, 40);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(1570, 100, 80, 900);
 
@@ -175,6 +191,21 @@ public class Usuarios extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1MouseClicked
+        EditarAlumno p = new EditarAlumno();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jList1MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        if(aux != null){//Miramos de donde venimos para decidir a donde vamos
+            aux.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
