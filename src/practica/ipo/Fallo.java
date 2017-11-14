@@ -31,6 +31,7 @@ public class Fallo extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -40,7 +41,7 @@ public class Fallo extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("¡¡¡¡¡Enhorabuena has acertado!!!!!");
+        jLabel1.setText("¡¡Oh que pena, casi lo tenías!!");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 50, 1680, 200);
@@ -48,12 +49,17 @@ public class Fallo extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton1.setText("Siguiente ejercicio");
         jPanel1.add(jButton1);
-        jButton1.setBounds(940, 800, 300, 110);
+        jButton1.setBounds(1040, 800, 300, 110);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton2.setText("Volver al menú");
+        jButton2.setText("Reintentar");
         jPanel1.add(jButton2);
-        jButton2.setBounds(440, 800, 300, 110);
+        jButton2.setBounds(680, 800, 320, 110);
+
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton3.setText("Volver al menú");
+        jPanel1.add(jButton3);
+        jButton3.setBounds(340, 800, 300, 110);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,6 +114,7 @@ public class Fallo extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
