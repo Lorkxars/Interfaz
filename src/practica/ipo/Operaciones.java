@@ -16,6 +16,12 @@ public class Operaciones extends javax.swing.JFrame {
      */
     public Operaciones() {
         initComponents();
+        this.jButton1.setEnabled(false);
+    }
+    private Operacion1 aux = null;
+    public Operaciones(Operacion1 aux){
+        initComponents();
+        this.aux = aux;
     }
 
     /**
@@ -105,6 +111,11 @@ public class Operaciones extends javax.swing.JFrame {
         jButton7.setBounds(480, 480, 230, 90);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel3.add(jButton1);
         jButton1.setBounds(1560, 130, 100, 880);
 
@@ -179,6 +190,14 @@ public class Operaciones extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        if(aux != null){
+        aux.setVisible(true);
+        this.setVisible(false);
+        dispose();
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
