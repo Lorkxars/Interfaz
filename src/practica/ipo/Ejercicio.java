@@ -16,6 +16,8 @@ public class Ejercicio extends javax.swing.JFrame {
      */
     public Ejercicio() {
         initComponents();
+        this.jTextField8.setEnabled(false);
+        this.jTextField8.setVisible(false);
     }
 
     /**
@@ -63,7 +65,6 @@ public class Ejercicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setMinimumSize(new java.awt.Dimension(1680, 1050));
@@ -94,29 +95,29 @@ public class Ejercicio extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("Si");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(530, 370, 43, 50);
+        jRadioButton1.setBounds(530, 370, 48, 50);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("No");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(740, 370, 55, 50);
+        jRadioButton2.setBounds(740, 370, 58, 50);
 
         buttonGroup2.add(jRadioButton3);
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(200, 500, 20, 21);
+        jRadioButton3.setBounds(200, 500, 20, 24);
 
         buttonGroup2.add(jRadioButton4);
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(900, 500, 21, 21);
+        jRadioButton4.setBounds(900, 500, 22, 24);
 
         buttonGroup2.add(jRadioButton5);
         jPanel1.add(jRadioButton5);
-        jRadioButton5.setBounds(200, 630, 21, 21);
+        jRadioButton5.setBounds(200, 630, 22, 24);
 
         buttonGroup2.add(jRadioButton6);
         jPanel1.add(jRadioButton6);
-        jRadioButton6.setBounds(900, 630, 21, 21);
+        jRadioButton6.setBounds(900, 630, 22, 24);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("4)");
@@ -130,7 +131,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(970, 620, 480, 35);
+        jTextField2.setBounds(970, 620, 480, 39);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("1)");
@@ -154,7 +155,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(260, 490, 480, 35);
+        jTextField3.setBounds(260, 490, 480, 39);
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -163,7 +164,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(260, 620, 480, 35);
+        jTextField4.setBounds(260, 620, 480, 39);
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -172,7 +173,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(970, 490, 480, 35);
+        jTextField5.setBounds(970, 490, 480, 39);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel8.setText("Enunciado");
@@ -199,6 +200,11 @@ public class Ejercicio extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton4.setText("Aplicar");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton4);
         jButton4.setBounds(880, 370, 160, 50);
 
@@ -243,6 +249,63 @@ public class Ejercicio extends javax.swing.JFrame {
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField5ActionPerformed
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        if(this.jRadioButton2.isSelected()){
+            this.jTextField2.setEnabled(false);
+            this.jTextField2.setVisible(false);
+            this.jTextField3.setEnabled(false);
+            this.jTextField3.setVisible(false);
+            this.jTextField4.setEnabled(false);
+            this.jTextField4.setVisible(false);
+            this.jTextField5.setEnabled(false);
+            this.jTextField5.setVisible(false);
+            
+            this.jLabel4.setVisible(false);
+            this.jLabel5.setVisible(false);
+            this.jLabel6.setVisible(false);
+            this.jLabel7.setVisible(false);
+            
+            this.jRadioButton3.setVisible(false);
+            this.jRadioButton3.setEnabled(false);
+            this.jRadioButton4.setVisible(false);
+            this.jRadioButton4.setEnabled(false);
+            this.jRadioButton5.setVisible(false);
+            this.jRadioButton5.setEnabled(false);
+            this.jRadioButton6.setVisible(false);
+            this.jRadioButton6.setEnabled(false);
+            
+            this.jTextField8.setEnabled(true);
+            this.jTextField8.setVisible(true);
+            
+        }else if(this.jRadioButton1.isSelected()){
+            this.jTextField2.setEnabled(true);
+            this.jTextField2.setVisible(true);
+            this.jTextField3.setEnabled(true);
+            this.jTextField3.setVisible(true);
+            this.jTextField4.setEnabled(true);
+            this.jTextField4.setVisible(true);
+            this.jTextField5.setEnabled(true);
+            this.jTextField5.setVisible(true);
+            
+            this.jLabel4.setVisible(true);
+            this.jLabel5.setVisible(true);
+            this.jLabel6.setVisible(true);
+            this.jLabel7.setVisible(true);
+            
+            this.jRadioButton3.setVisible(true);
+            this.jRadioButton3.setEnabled(true);
+            this.jRadioButton4.setVisible(true);
+            this.jRadioButton4.setEnabled(true);
+            this.jRadioButton5.setVisible(true);
+            this.jRadioButton5.setEnabled(true);
+            this.jRadioButton6.setVisible(true);
+            this.jRadioButton6.setEnabled(true);
+            
+            this.jTextField8.setEnabled(false);
+            this.jTextField8.setVisible(false);
+        }
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments

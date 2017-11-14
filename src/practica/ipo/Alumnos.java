@@ -23,6 +23,12 @@ public class Alumnos extends javax.swing.JFrame {
         initComponents();
         auxop = aux;
     }
+    private Historial auxhis = null;
+    public Alumnos(Historial aux) {
+        initComponents();
+        auxhis = aux;
+    }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -148,6 +154,12 @@ public class Alumnos extends javax.swing.JFrame {
         auxop.setVisible(true);
         this.setVisible(false);
         dispose();
+        auxhis = null;
+        }else if(auxhis != null){
+        auxhis.setVisible(true);
+        this.setVisible(false);
+        dispose();
+        auxop = null;
         }
     }//GEN-LAST:event_jButton2MouseClicked
 
