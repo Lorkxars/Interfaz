@@ -43,14 +43,14 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel3.setText("Usuario");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(100, 130, 250, 60);
+        jLabel3.setBounds(100, 130, 350, 60);
         jPanel2.add(User);
         User.setBounds(560, 130, 520, 70);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel4.setText("Contraseña");
         jPanel2.add(jLabel4);
-        jLabel4.setBounds(100, 330, 370, 60);
+        jLabel4.setBounds(100, 330, 400, 60);
 
         Pass.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
         Pass.setText("jPasswordField1");

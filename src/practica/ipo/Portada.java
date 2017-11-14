@@ -47,7 +47,7 @@ public class Portada extends javax.swing.JFrame {
         jLabel1.setText("Bienvenidos");
         jLabel1.setToolTipText("");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(350, 90, 450, 170);
+        jLabel1.setBounds(250, 90, 650, 170);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jButton1.setText("Pulse para comenzar");
@@ -62,7 +62,7 @@ public class Portada extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(200, 320, 740, 190);
+        jButton1.setBounds(100, 320, 940, 190);
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 1170, 630);
 
