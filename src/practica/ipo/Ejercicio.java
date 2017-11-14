@@ -55,6 +55,10 @@ public class Ejercicio extends javax.swing.JFrame {
         jTextField7 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jTextField8 = new javax.swing.JTextField();
+        this.jTextField8.setVisible(false);
+        this.jTextField8.setEnabled(false);
+        jButton6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -150,7 +154,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(260, 495, 480, 35);
+        jTextField3.setBounds(260, 490, 480, 35);
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -194,14 +198,21 @@ public class Ejercicio extends javax.swing.JFrame {
         jTextField7.setBounds(290, 720, 640, 50);
 
         jButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jButton4.setText("Buscar");
+        jButton4.setText("Aplicar");
         jPanel1.add(jButton4);
-        jButton4.setBounds(1000, 720, 160, 50);
+        jButton4.setBounds(880, 370, 160, 50);
 
         jButton5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton5.setText("Cancelar");
         jPanel1.add(jButton5);
         jButton5.setBounds(600, 920, 160, 50);
+        jPanel1.add(jTextField8);
+        jTextField8.setBounds(90, 460, 1450, 240);
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton6.setText("Buscar");
+        jPanel1.add(jButton6);
+        jButton6.setBounds(1000, 720, 160, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -274,6 +285,7 @@ public class Ejercicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -297,5 +309,6 @@ public class Ejercicio extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }
