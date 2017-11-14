@@ -18,12 +18,21 @@ public class Operaciones extends javax.swing.JFrame {
         initComponents();
         this.jButton1.setEnabled(false);
     }
-    private Operacion1 aux = null;
+    private Operacion1 auxop = null;
     public Operaciones(Operacion1 aux){
         initComponents();
-        this.aux = aux;
+        this.auxop = aux;
     }
-
+    private Fallo auxfa = null;
+    public Operaciones(Fallo aux){
+        initComponents();
+        this.auxfa = aux;
+    }
+    private Acierto auxac = null;
+    public Operaciones(Acierto aux){
+        initComponents();
+        this.auxac = aux;
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -192,10 +201,24 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        if(aux != null){
-        aux.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        if(auxop != null){//Miramos de donde venimos para decidir a donde vamos
+            auxop.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            auxfa = null;
+            auxac =null;
+        }else if(auxfa != null){
+            auxfa.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            auxop = null;
+            auxac =null;
+        }else if(auxac != null){
+            auxac.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            auxfa = null;
+            auxop =null;
         }
     }//GEN-LAST:event_jButton1MouseClicked
 

@@ -5,6 +5,8 @@
  */
 package practica.ipo;
 
+import java.util.Random;
+
 /**
  *
  * @author david
@@ -38,7 +40,6 @@ public class Operacion1 extends javax.swing.JFrame {
         jRadioButton4 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -89,6 +90,11 @@ public class Operacion1 extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton1.setText("Aceptar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(690, 830, 230, 120);
 
@@ -101,15 +107,11 @@ public class Operacion1 extends javax.swing.JFrame {
         jPanel1.add(jButton2);
         jButton2.setBounds(10, 240, 100, 730);
 
-        jButton3.setText("jButton3");
-        jPanel1.add(jButton3);
-        jButton3.setBounds(1550, 240, 100, 730);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1612, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -127,6 +129,24 @@ public class Operacion1 extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        Random r = new Random();
+        int i = r.nextInt(2);
+        if(i == 0){
+            Acierto p = new Acierto();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }else{
+            Fallo p = new Fallo(this);
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -167,7 +187,6 @@ public class Operacion1 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
