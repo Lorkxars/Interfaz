@@ -14,8 +14,13 @@ public class Historial extends javax.swing.JFrame {
     /**
      * Creates new form Historial
      */
+    private boolean aux;
     public Historial() {
         initComponents();
+    }
+    public Historial(boolean aux) {
+        initComponents();
+        this.aux = aux;
     }
 
     /**
@@ -167,10 +172,18 @@ public class Historial extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Alumnos p = new Alumnos(this);
-        p.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        if(aux){
+            Profesor p = new Profesor(this);
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
+        else{
+            Alumnos p = new Alumnos(this);
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
     }//GEN-LAST:event_jButton2MouseClicked
 
     /**

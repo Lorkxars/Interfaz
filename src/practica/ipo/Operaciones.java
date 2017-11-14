@@ -166,7 +166,7 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_SumaActionPerformed
 
     private void SumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SumaMouseClicked
-        Operacion1 p = new Operacion1();
+        Suma p = new Suma();
         p.setVisible(true);
         this.setVisible(false);
         dispose();
@@ -180,14 +180,14 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_RestaMouseClicked
 
     private void MultiplicacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MultiplicacionMouseClicked
-        Operacion1 p = new Operacion1();
+        Multiplicacion p = new Multiplicacion();
         p.setVisible(true);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_MultiplicacionMouseClicked
 
     private void DivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DivisionMouseClicked
-        Operacion1 p = new Operacion1();
+        Division p = new Division();
         p.setVisible(true);
         this.setVisible(false);
         dispose();

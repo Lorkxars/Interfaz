@@ -5,16 +5,18 @@
  */
 package practica.ipo;
 
+import java.util.Random;
+
 /**
  *
  * @author pablo
  */
-public class Multiplicación extends javax.swing.JFrame {
+public class Multiplicacion extends javax.swing.JFrame {
 
     /**
      * Creates new form Multiplicación
      */
-    public Multiplicación() {
+    public Multiplicacion() {
         initComponents();
     }
 
@@ -40,9 +42,7 @@ public class Multiplicación extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
         setResizable(false);
 
         jPanel1.setLayout(null);
@@ -61,6 +61,11 @@ public class Multiplicación extends javax.swing.JFrame {
         jLabel2.setBounds(120, 240, 1480, 100);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton1);
         jButton1.setBounds(10, 240, 100, 730);
 
@@ -73,28 +78,33 @@ public class Multiplicación extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("30 latas");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(1100, 420, 400, 37);
+        jRadioButton1.setBounds(1100, 420, 400, 33);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("100 latas");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(1100, 520, 400, 37);
+        jRadioButton2.setBounds(1100, 520, 400, 33);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton3.setText("12 latas");
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(1100, 620, 400, 37);
+        jRadioButton3.setBounds(1100, 620, 400, 33);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton4.setText("48 latas");
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(1100, 720, 400, 37);
+        jRadioButton4.setBounds(1100, 720, 400, 33);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton2.setText("Aceptar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(690, 830, 230, 120);
 
@@ -111,6 +121,31 @@ public class Multiplicación extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        Operaciones p = new Operaciones();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+Random r = new Random();
+        int i = r.nextInt(2);
+        if(i == 0){
+            Acierto p = new Acierto();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }else{
+            Fallo p = new Fallo();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -129,20 +164,21 @@ public class Multiplicación extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Multiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Multiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Multiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Multiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Multiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Multiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Multiplicación.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Multiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Multiplicación().setVisible(true);
+                new Multiplicacion().setVisible(true);
             }
         });
     }

@@ -30,6 +30,11 @@ public class Profesor extends javax.swing.JFrame {
         this.auxhpr = aux;
         initComponents();
     }
+    private Historial auxhis = null;
+    public Profesor(Historial aux){
+        initComponents();
+        auxhis = null;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -71,6 +76,11 @@ public class Profesor extends javax.swing.JFrame {
 
         Historial.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Historial.setText("Historial");
+        Historial.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                HistorialMouseClicked(evt);
+            }
+        });
         jPanel1.add(Historial);
         Historial.setBounds(100, 350, 1480, 340);
 
@@ -140,11 +150,19 @@ public class Profesor extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
         auxhpr = null;
+        auxhis = null;
         }else if(auxhpr != null){
         auxhpr.setVisible(true);
         this.setVisible(false);
         dispose();
         auxusr = null;
+        auxhis = null;
+        }else if(auxhis != null){
+        auxhis.setVisible(true);
+        this.setVisible(false);
+        dispose();
+        auxusr = null;
+        auxhpr = null;
         }
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -154,6 +172,13 @@ public class Profesor extends javax.swing.JFrame {
             this.setVisible(false);
             dispose();
     }//GEN-LAST:event_EjerciciosMouseClicked
+
+    private void HistorialMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HistorialMouseClicked
+        Historial p = new Historial(true);
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+    }//GEN-LAST:event_HistorialMouseClicked
 
     /**
      * @param args the command line arguments

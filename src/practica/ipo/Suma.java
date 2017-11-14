@@ -5,6 +5,8 @@
  */
 package practica.ipo;
 
+import java.util.Random;
+
 /**
  *
  * @author pablo
@@ -60,6 +62,11 @@ public class Suma extends javax.swing.JFrame {
         jLabel2.setBounds(120, 240, 1480, 100);
 
         jButton1.setText("jButton1");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -99,6 +106,11 @@ public class Suma extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton2.setText("Aceptar");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton2);
         jButton2.setBounds(690, 830, 230, 120);
 
@@ -119,6 +131,31 @@ public class Suma extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        Operaciones p = new Operaciones();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        Random r = new Random();
+        int i = r.nextInt(2);
+        if(i == 0){
+            Acierto p = new Acierto();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }else{
+            Fallo p = new Fallo();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+            r = null;
+        }
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
