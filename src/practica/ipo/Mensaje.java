@@ -53,7 +53,7 @@ public class Mensaje extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(247, 230, 100, 29);
+        jButton1.setBounds(247, 230, 100, 23);
 
         jButton2.setText("Cancelar");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -62,7 +62,7 @@ public class Mensaje extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(60, 230, 110, 29);
+        jButton2.setBounds(60, 230, 110, 23);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 400, 300);
