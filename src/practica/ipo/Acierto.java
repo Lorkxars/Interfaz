@@ -31,6 +31,7 @@ public class Acierto extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -64,6 +65,10 @@ public class Acierto extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(440, 800, 300, 110);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Enhorabuena.jpg"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(340, 250, 1000, 520);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,6 +140,7 @@ public class Acierto extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

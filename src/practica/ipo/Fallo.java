@@ -37,6 +37,7 @@ public class Fallo extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -80,6 +81,10 @@ public class Fallo extends javax.swing.JFrame {
         });
         jPanel1.add(jButton3);
         jButton3.setBounds(340, 800, 300, 110);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/SigueIntentandolo.jpg"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(340, 250, 1000, 520);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -157,6 +162,7 @@ public class Fallo extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

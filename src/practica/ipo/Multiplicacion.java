@@ -70,7 +70,7 @@ public class Multiplicacion extends javax.swing.JFrame {
         jButton1.setBounds(10, 240, 100, 730);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jLabel3.setText("Pruebaaaaaa");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Multiplicacion.jpg"))); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(130, 390, 800, 390);
 
@@ -78,25 +78,25 @@ public class Multiplicacion extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("30 latas");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(1100, 420, 400, 33);
+        jRadioButton1.setBounds(1100, 420, 400, 37);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("100 latas");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(1100, 520, 400, 33);
+        jRadioButton2.setBounds(1100, 520, 400, 37);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton3.setText("12 latas");
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(1100, 620, 400, 33);
+        jRadioButton3.setBounds(1100, 620, 400, 37);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton4.setText("48 latas");
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(1100, 720, 400, 33);
+        jRadioButton4.setBounds(1100, 720, 400, 37);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton2.setText("Aceptar");
@@ -112,11 +112,11 @@ public class Multiplicacion extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1643, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 888, Short.MAX_VALUE)
         );
 
         pack();
