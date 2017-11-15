@@ -115,8 +115,10 @@ public class Fallo extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Operacion1 p = aux;
-        p.setVisible(true);
+        if(aux == null){
+            aux = new Operacion1();
+        }
+        aux.setVisible(true);
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
