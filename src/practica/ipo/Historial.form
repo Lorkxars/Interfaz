@@ -9,6 +9,7 @@
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1680, 1050]"/>
     </Property>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -72,11 +73,11 @@
                 </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
+                    <StringItem index="0" value="2"/>
+                    <StringItem index="1" value="1"/>
+                    <StringItem index="2" value="1"/>
+                    <StringItem index="3" value="4"/>
+                    <StringItem index="4" value="3"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -104,12 +105,13 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
+                  <StringArray count="6">
+                    <StringItem index="0" value="Alfredo"/>
+                    <StringItem index="1" value="Alfredo"/>
+                    <StringItem index="2" value="Bea"/>
+                    <StringItem index="3" value="Manuel"/>
+                    <StringItem index="4" value="Pedro"/>
+                    <StringItem index="5" value=" "/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -137,12 +139,13 @@
                   <Font name="Tahoma" size="24" style="0"/>
                 </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
+                  <StringArray count="6">
+                    <StringItem index="0" value="31/07/2017"/>
+                    <StringItem index="1" value="17/07/2017"/>
+                    <StringItem index="2" value="04/08/2017"/>
+                    <StringItem index="3" value="24/07/2017"/>
+                    <StringItem index="4" value="15/08/2017"/>
+                    <StringItem index="5" value=" "/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -171,11 +174,11 @@
                 </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
+                    <StringItem index="0" value="Suma"/>
+                    <StringItem index="1" value="Resta"/>
+                    <StringItem index="2" value="Divisi&#xf3;n"/>
+                    <StringItem index="3" value="Multiplicaci&#xf3;n"/>
+                    <StringItem index="4" value="Suma"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -207,11 +210,11 @@
                 </Property>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
                   <StringArray count="5">
-                    <StringItem index="0" value="Item 1"/>
-                    <StringItem index="1" value="Item 2"/>
-                    <StringItem index="2" value="Item 3"/>
-                    <StringItem index="3" value="Item 4"/>
-                    <StringItem index="4" value="Item 5"/>
+                    <StringItem index="0" value="Bien"/>
+                    <StringItem index="1" value="Mal"/>
+                    <StringItem index="2" value="Bien"/>
+                    <StringItem index="3" value="Bien"/>
+                    <StringItem index="4" value="Mal"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -293,7 +296,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Avanzar"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -303,7 +306,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Volver"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseClicked"/>

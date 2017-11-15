@@ -6,6 +6,7 @@
 package practica.ipo;
 
 import java.util.Random;
+import javafx.scene.paint.Color;
 
 /**
  *
@@ -62,10 +63,15 @@ public class Operaciones extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jPanel3.setLayout(null);
 
+        Empezar.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
         Empezar.setText("Empezar");
         Empezar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -75,9 +81,7 @@ public class Operaciones extends javax.swing.JFrame {
         jPanel3.add(Empezar);
         Empezar.setBounds(692, 439, 280, 240);
 
-        jLabel5.setBackground(new java.awt.Color(253, 248, 174));
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(250, 253, 161));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("¿Qué quieres hacer hoy?");
         jPanel3.add(jLabel5);
@@ -137,7 +141,7 @@ public class Operaciones extends javax.swing.JFrame {
         jPanel3.add(jButton7);
         jButton7.setBounds(480, 480, 230, 90);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -146,7 +150,7 @@ public class Operaciones extends javax.swing.JFrame {
         jPanel3.add(jButton1);
         jButton1.setBounds(1560, 130, 100, 880);
 
-        jButton2.setText("jButton1");
+        jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
@@ -181,19 +185,23 @@ public class Operaciones extends javax.swing.JFrame {
 
     private void SumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SumaMouseClicked
         s = !s;
+        Suma.setBackground(java.awt.Color.cyan);
         //aqui le cambias el color ;) jodete
     }//GEN-LAST:event_SumaMouseClicked
 
     private void RestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RestaMouseClicked
         r = !r;
+        Resta.setBackground(java.awt.Color.ORANGE);
     }//GEN-LAST:event_RestaMouseClicked
 
     private void MultiplicacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MultiplicacionMouseClicked
         m = !m;
+        Multiplicacion.setBackground(java.awt.Color.BLUE);
     }//GEN-LAST:event_MultiplicacionMouseClicked
 
     private void DivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DivisionMouseClicked
         d = !d;
+        Division.setBackground(java.awt.Color.MAGENTA);
     }//GEN-LAST:event_DivisionMouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked

@@ -35,8 +35,14 @@ public class Login extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
-        jPanel2.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jPanel2.setMaximumSize(new java.awt.Dimension(1680, 1050));
+        jPanel2.setMinimumSize(new java.awt.Dimension(1680, 1050));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1680, 1050));
 
         jPanel2.setLayout(null);
 
@@ -44,6 +50,8 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Usuario");
         jPanel2.add(jLabel3);
         jLabel3.setBounds(100, 130, 350, 60);
+
+        User.setFont(new java.awt.Font("Tahoma", 0, 42)); // NOI18N
         jPanel2.add(User);
         User.setBounds(560, 130, 520, 70);
 

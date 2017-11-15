@@ -40,7 +40,10 @@ public class Fallo extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
         setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setLayout(null);

@@ -46,6 +46,8 @@ public class Alumnos extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
         setPreferredSize(new java.awt.Dimension(1680, 1050));
         setResizable(false);
 
@@ -81,7 +83,7 @@ public class Alumnos extends javax.swing.JFrame {
         jPanel4.add(jButton9);
         jButton9.setBounds(100, 0, 1465, 510);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -90,7 +92,7 @@ public class Alumnos extends javax.swing.JFrame {
         jPanel4.add(jButton1);
         jButton1.setBounds(0, 0, 100, 1020);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Avanzar");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);

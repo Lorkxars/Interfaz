@@ -44,7 +44,7 @@ public class Division extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel1.setLayout(null);
 
@@ -61,7 +61,7 @@ public class Division extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(120, 240, 1500, 100);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);

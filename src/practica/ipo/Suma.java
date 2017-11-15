@@ -61,7 +61,7 @@ public class Suma extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(120, 240, 1480, 100);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);

@@ -62,6 +62,9 @@ public class Usuarios extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setLayout(null);
@@ -136,7 +139,7 @@ public class Usuarios extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(560, 40, 220, 40);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -145,7 +148,7 @@ public class Usuarios extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(1570, 100, 80, 900);
 
-        jButton2.setText("jButton1");
+        jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);

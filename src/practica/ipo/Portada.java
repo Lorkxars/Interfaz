@@ -36,7 +36,10 @@ public class Portada extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jPanel1.setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -47,7 +50,7 @@ public class Portada extends javax.swing.JFrame {
         jLabel1.setText("Bienvenidos");
         jLabel1.setToolTipText("");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(250, 90, 650, 170);
+        jLabel1.setBounds(515, 200, 650, 170);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jButton1.setText("Pulse para comenzar");
@@ -62,12 +65,12 @@ public class Portada extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(100, 320, 940, 190);
+        jButton1.setBounds(370, 500, 940, 190);
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 1170, 630);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(400, 200, 1170, 630);
+        jPanel1.setBounds(0, 0, 1680, 1050);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

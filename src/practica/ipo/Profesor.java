@@ -53,6 +53,9 @@ public class Profesor extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
         setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
@@ -94,7 +97,7 @@ public class Profesor extends javax.swing.JFrame {
         jPanel1.add(Ejercicios);
         Ejercicios.setBounds(100, 695, 1480, 340);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -103,7 +106,7 @@ public class Profesor extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(1580, 5, 100, 1030);
 
-        jButton2.setText("jButton1");
+        jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);

@@ -62,7 +62,7 @@ public class HistoProfe extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "17/07/2017", "24/07/2017", "31/07/2017", "04/08/2017", "15/08/2017", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -73,7 +73,7 @@ public class HistoProfe extends javax.swing.JFrame {
 
         jList2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Suma ", "Multiplicación", "Resta", "División", "Suma" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -84,7 +84,7 @@ public class HistoProfe extends javax.swing.JFrame {
 
         jList3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "80%", "60%", "70%", "50%", "90%" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -95,7 +95,7 @@ public class HistoProfe extends javax.swing.JFrame {
 
         jList4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "1", "3", "2", "4", "5", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -106,7 +106,7 @@ public class HistoProfe extends javax.swing.JFrame {
 
         jList5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList5.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Si tenemos 3 pelotas de...", "En casa tienes 8 paque...", "Si tengo 8 manzanas y...", "Pedro tiene 72 carame...", "En un tren van 5 pasa..." };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -150,7 +150,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(920, 70, 250, 50);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -178,7 +178,7 @@ public class HistoProfe extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 885, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1050, Short.MAX_VALUE)
         );
 
         pack();

@@ -42,6 +42,10 @@ public class Operacion1 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(1680, 1050));
+        setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setPreferredSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setLayout(null);
@@ -97,7 +101,7 @@ public class Operacion1 extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(690, 830, 230, 120);
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);

@@ -54,6 +54,7 @@ public class Historial extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
+        setResizable(false);
 
         jPanel1.setMaximumSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setMinimumSize(new java.awt.Dimension(1680, 1050));
@@ -61,7 +62,7 @@ public class Historial extends javax.swing.JFrame {
 
         jList1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "2", "1", "1", "4", "3" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -72,7 +73,7 @@ public class Historial extends javax.swing.JFrame {
 
         jList2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Alfredo", "Alfredo", "Bea", "Manuel", "Pedro", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -83,7 +84,7 @@ public class Historial extends javax.swing.JFrame {
 
         jList3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "31/07/2017", "17/07/2017", "04/08/2017", "24/07/2017", "15/08/2017", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -94,7 +95,7 @@ public class Historial extends javax.swing.JFrame {
 
         jList4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Suma", "Resta", "División", "Multiplicación", "Suma" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -110,7 +111,7 @@ public class Historial extends javax.swing.JFrame {
 
         jList5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList5.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Bien", "Mal", "Bien", "Bien", "Mal" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -149,11 +150,11 @@ public class Historial extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(1000, 70, 280, 50);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Avanzar");
         jPanel1.add(jButton1);
         jButton1.setBounds(1590, 70, 80, 880);
 
-        jButton2.setText("jButton1");
+        jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
