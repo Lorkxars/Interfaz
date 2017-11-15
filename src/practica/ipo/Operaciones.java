@@ -5,6 +5,8 @@
  */
 package practica.ipo;
 
+import java.util.Random;
+
 /**
  *
  * @author pablo
@@ -14,25 +16,31 @@ public class Operaciones extends javax.swing.JFrame {
     /**
      * Creates new form Operaciones
      */
+    private boolean s, r, m, d, mierda;
+
     public Operaciones() {
         initComponents();
         this.jButton1.setEnabled(false);
     }
     private Operacion1 auxop = null;
-    public Operaciones(Operacion1 aux){
+
+    public Operaciones(Operacion1 aux) {
         initComponents();
         this.auxop = aux;
     }
     private Fallo auxfa = null;
-    public Operaciones(Fallo aux){
+
+    public Operaciones(Fallo aux) {
         initComponents();
         this.auxfa = aux;
     }
     private Acierto auxac = null;
-    public Operaciones(Acierto aux){
+
+    public Operaciones(Acierto aux) {
         initComponents();
         this.auxac = aux;
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -43,6 +51,7 @@ public class Operaciones extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
+        Empezar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         Division = new javax.swing.JButton();
         Suma = new javax.swing.JButton();
@@ -56,6 +65,15 @@ public class Operaciones extends javax.swing.JFrame {
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jPanel3.setLayout(null);
+
+        Empezar.setText("Empezar");
+        Empezar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EmpezarMouseClicked(evt);
+            }
+        });
+        jPanel3.add(Empezar);
+        Empezar.setBounds(692, 439, 280, 240);
 
         jLabel5.setBackground(new java.awt.Color(253, 248, 174));
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
@@ -141,21 +159,17 @@ public class Operaciones extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1680, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1680, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1680, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1050, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1050, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1050, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,31 +180,20 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_SumaActionPerformed
 
     private void SumaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SumaMouseClicked
-        Suma p = new Suma();
-        p.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        s = !s;
+        //aqui le cambias el color ;) jodete
     }//GEN-LAST:event_SumaMouseClicked
 
     private void RestaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_RestaMouseClicked
-        Operacion1 p = new Operacion1();
-        p.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        r = !r;
     }//GEN-LAST:event_RestaMouseClicked
 
     private void MultiplicacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MultiplicacionMouseClicked
-        Multiplicacion p = new Multiplicacion();
-        p.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        m = !m;
     }//GEN-LAST:event_MultiplicacionMouseClicked
 
     private void DivisionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DivisionMouseClicked
-        Division p = new Division();
-        p.setVisible(true);
-        this.setVisible(false);
-        dispose();
+        d = !d;
     }//GEN-LAST:event_DivisionMouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -201,26 +204,67 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        if(auxop != null){//Miramos de donde venimos para decidir a donde vamos
+        if (auxop != null) {//Miramos de donde venimos para decidir a donde vamos
             auxop.setVisible(true);
             this.setVisible(false);
             dispose();
             auxfa = null;
-            auxac =null;
-        }else if(auxfa != null){
+            auxac = null;
+        } else if (auxfa != null) {
             auxfa.setVisible(true);
             this.setVisible(false);
             dispose();
             auxop = null;
-            auxac =null;
-        }else if(auxac != null){
+            auxac = null;
+        } else if (auxac != null) {
             auxac.setVisible(true);
             this.setVisible(false);
             dispose();
             auxfa = null;
-            auxop =null;
+            auxop = null;
         }
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void EmpezarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EmpezarMouseClicked
+        mierda = true;
+        Random tuputamadre = new Random();// :)
+        int i = tuputamadre.nextInt(4);
+        while (mierda) {
+            if(!s && !r && !m && !d){
+                mierda = false;
+            }
+            if (s && i == 0) {
+                Suma p = new Suma();
+                p.setVisible(true);
+                this.setVisible(false);
+                mierda = false;
+                dispose();
+            }
+            if (r && i == 1) {
+                Operacion1 p = new Operacion1();
+                p.setVisible(true);
+                this.setVisible(false);
+                mierda = false;
+                dispose();
+            }
+            if (m && i == 2) {
+                Multiplicacion p = new Multiplicacion();
+                p.setVisible(true);
+                this.setVisible(false);
+                mierda = false;
+                dispose();
+            }
+            if (d && i == 3) {
+                Division p = new Division();
+                p.setVisible(true);
+                this.setVisible(false);
+                mierda = false;
+                dispose();
+            }
+            i++;
+            i= i%4;
+        }
+    }//GEN-LAST:event_EmpezarMouseClicked
 
     /**
      * @param args the command line arguments
@@ -259,6 +303,7 @@ public class Operaciones extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Division;
+    private javax.swing.JButton Empezar;
     private javax.swing.JButton Multiplicacion;
     private javax.swing.JButton Resta;
     private javax.swing.JButton Suma;
