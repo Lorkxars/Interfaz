@@ -72,7 +72,7 @@ public class Usuarios extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "RELLENOS" };
+            String[] strings = { "Alfredo", "Bea", "Manuel", "Pedro", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -87,7 +87,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane1.setBounds(790, 100, 220, 900);
 
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "COMEME" };
+            String[] strings = { "Alfredo", "Bea", "Manuel", "Pedro", " " };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -97,7 +97,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane2.setBounds(100, 100, 220, 900);
 
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "LOS" };
+            String[] strings = { "A", "B", "A", "C" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -107,7 +107,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane3.setBounds(330, 100, 220, 900);
 
         jList4.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "HUEVOS" };
+            String[] strings = { "Suma, Resta", "División", "Multiplicación", "Suma" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });

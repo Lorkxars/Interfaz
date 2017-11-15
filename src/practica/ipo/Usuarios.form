@@ -66,8 +66,12 @@
             <Component class="javax.swing.JList" name="jList1">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="RELLENOS"/>
+                  <StringArray count="5">
+                    <StringItem index="0" value="Alfredo"/>
+                    <StringItem index="1" value="Bea"/>
+                    <StringItem index="2" value="Manuel"/>
+                    <StringItem index="3" value="Pedro"/>
+                    <StringItem index="4" value=" "/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -95,8 +99,12 @@
             <Component class="javax.swing.JList" name="jList2">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="COMEME"/>
+                  <StringArray count="5">
+                    <StringItem index="0" value="Alfredo"/>
+                    <StringItem index="1" value="Bea"/>
+                    <StringItem index="2" value="Manuel"/>
+                    <StringItem index="3" value="Pedro"/>
+                    <StringItem index="4" value=" "/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -121,8 +129,11 @@
             <Component class="javax.swing.JList" name="jList3">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="LOS"/>
+                  <StringArray count="4">
+                    <StringItem index="0" value="A"/>
+                    <StringItem index="1" value="B"/>
+                    <StringItem index="2" value="A"/>
+                    <StringItem index="3" value="C"/>
                   </StringArray>
                 </Property>
               </Properties>
@@ -147,8 +158,11 @@
             <Component class="javax.swing.JList" name="jList4">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="HUEVOS"/>
+                  <StringArray count="4">
+                    <StringItem index="0" value="Suma, Resta"/>
+                    <StringItem index="1" value="Divisi&#xf3;n"/>
+                    <StringItem index="2" value="Multiplicaci&#xf3;n"/>
+                    <StringItem index="3" value="Suma"/>
                   </StringArray>
                 </Property>
               </Properties>
