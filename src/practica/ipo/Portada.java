@@ -33,6 +33,7 @@ public class Portada extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
@@ -69,6 +70,15 @@ public class Portada extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 1170, 630);
 
+        jButton2.setText("Accesibilidad");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(1410, 9, 230, 120);
+
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 1680, 1050);
 
@@ -85,6 +95,13 @@ public class Portada extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        Accesibilidad p = new Accesibilidad();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -124,6 +141,7 @@ public class Portada extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
