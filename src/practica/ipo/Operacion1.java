@@ -42,7 +42,6 @@ public class Operacion1 extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1680, 1050));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setLayout(null);
@@ -60,7 +59,7 @@ public class Operacion1 extends javax.swing.JFrame {
         jLabel2.setBounds(120, 240, 1480, 100);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
-        jLabel3.setText("Pruebaaaaaaa");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Resta.jpg"))); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(120, 390, 800, 390);
 
@@ -68,25 +67,25 @@ public class Operacion1 extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("5 manzanas");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(1100, 420, 400, 33);
+        jRadioButton1.setBounds(1100, 420, 400, 37);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("2 manzanas");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(1100, 520, 400, 33);
+        jRadioButton2.setBounds(1100, 520, 400, 37);
 
         buttonGroup1.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton3.setText("3 manzanas");
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(1100, 620, 400, 33);
+        jRadioButton3.setBounds(1100, 620, 400, 37);
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton4.setText("A ti que te importa");
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(1100, 720, 400, 33);
+        jRadioButton4.setBounds(1100, 720, 400, 37);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jButton1.setText("Aceptar");
