@@ -61,6 +61,8 @@ public class Ejercicio extends javax.swing.JFrame {
         this.jTextField8.setVisible(false);
         this.jTextField8.setEnabled(false);
         jButton6 = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel10.setVisible(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -187,6 +189,11 @@ public class Ejercicio extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton3.setText("Actualizar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton3);
         jButton3.setBounds(1080, 920, 160, 50);
 
@@ -225,6 +232,10 @@ public class Ejercicio extends javax.swing.JFrame {
         jButton6.setText("Buscar");
         jPanel1.add(jButton6);
         jButton6.setBounds(1000, 720, 160, 50);
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/TickVerde.jpg"))); // NOI18N
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(1340, 910, 70, 70);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -317,8 +328,13 @@ public class Ejercicio extends javax.swing.JFrame {
         HistoProfe p = new HistoProfe();
         p.setVisible(true);
         this.setVisible(false);
+        jLabel10.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        jLabel10.setVisible(true);
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -363,6 +379,7 @@ public class Ejercicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

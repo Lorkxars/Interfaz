@@ -60,6 +60,8 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel8.setVisible(false);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -181,8 +183,17 @@ public class Usuarios extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(255, 153, 153));
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton3.setText("Crear usuario");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
         jPanel1.add(jButton3);
         jButton3.setBounds(1230, 440, 200, 80);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/TickVerde.jpg"))); // NOI18N
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(1310, 580, 70, 70);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -202,6 +213,7 @@ public class Usuarios extends javax.swing.JFrame {
         Profesor p = new Profesor(this);
         p.setVisible(true);
         this.setVisible(false);
+        jLabel8.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
 
@@ -232,6 +244,10 @@ public class Usuarios extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jList4MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        jLabel8.setVisible(true);
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -279,6 +295,7 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JList<String> jList1;
     private javax.swing.JList<String> jList2;
     private javax.swing.JList<String> jList3;
