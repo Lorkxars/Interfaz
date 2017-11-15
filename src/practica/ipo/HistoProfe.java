@@ -110,6 +110,11 @@ public class HistoProfe extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList5MouseClicked(evt);
+            }
+        });
         jScrollPane5.setViewportView(jList5);
 
         jPanel1.add(jScrollPane5);
@@ -197,6 +202,13 @@ public class HistoProfe extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton1MouseClicked
+
+    private void jList5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList5MouseClicked
+        Ejercicio p = new Ejercicio();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jList5MouseClicked
 
     /**
      * @param args the command line arguments
