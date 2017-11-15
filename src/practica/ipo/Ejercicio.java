@@ -19,7 +19,12 @@ public class Ejercicio extends javax.swing.JFrame {
         this.jTextField8.setEnabled(false);
         this.jTextField8.setVisible(false);
     }
-
+    public Ejercicio(Mensaje j) {
+        initComponents();
+        this.jTextField8.setEnabled(false);
+        this.jTextField8.setVisible(false);
+        jLabel10.setVisible(true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -98,29 +103,29 @@ public class Ejercicio extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("Si");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(530, 370, 43, 50);
+        jRadioButton1.setBounds(530, 370, 48, 50);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("No");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(740, 370, 55, 50);
+        jRadioButton2.setBounds(740, 370, 58, 50);
 
         buttonGroup2.add(jRadioButton3);
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(200, 500, 20, 21);
+        jRadioButton3.setBounds(200, 500, 20, 24);
 
         buttonGroup2.add(jRadioButton4);
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(900, 500, 21, 21);
+        jRadioButton4.setBounds(900, 500, 22, 24);
 
         buttonGroup2.add(jRadioButton5);
         jPanel1.add(jRadioButton5);
-        jRadioButton5.setBounds(200, 630, 21, 21);
+        jRadioButton5.setBounds(200, 630, 22, 24);
 
         buttonGroup2.add(jRadioButton6);
         jPanel1.add(jRadioButton6);
-        jRadioButton6.setBounds(900, 630, 21, 21);
+        jRadioButton6.setBounds(900, 630, 22, 24);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("4)");
@@ -134,7 +139,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(970, 620, 480, 35);
+        jTextField2.setBounds(970, 620, 480, 39);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("1)");
@@ -158,7 +163,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(260, 490, 480, 35);
+        jTextField3.setBounds(260, 490, 480, 39);
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -167,7 +172,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(260, 620, 480, 35);
+        jTextField4.setBounds(260, 620, 480, 39);
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -176,7 +181,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(970, 490, 480, 35);
+        jTextField5.setBounds(970, 490, 480, 39);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel8.setText("Enunciado");
@@ -333,7 +338,11 @@ public class Ejercicio extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5MouseClicked
 
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        jLabel10.setVisible(true);
+        Mensaje p = new Mensaje();
+        p.setVisible(true);
+        this.setVisible(false);
+        jLabel10.setVisible(false);
+        dispose();
     }//GEN-LAST:event_jButton3MouseClicked
 
     /**
