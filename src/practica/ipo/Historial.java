@@ -98,6 +98,11 @@ public class Historial extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jList4MouseClicked(evt);
+            }
+        });
         jScrollPane4.setViewportView(jList4);
 
         jPanel1.add(jScrollPane4);
@@ -185,6 +190,21 @@ public class Historial extends javax.swing.JFrame {
             dispose();
         }
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jList4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList4MouseClicked
+        if(aux){
+            Ejercicio p = new Ejercicio();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
+        else{
+            Operacion1 p = new Operacion1();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
+    }//GEN-LAST:event_jList4MouseClicked
 
     /**
      * @param args the command line arguments
