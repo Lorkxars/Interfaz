@@ -38,7 +38,6 @@ public class Acierto extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
         setPreferredSize(new java.awt.Dimension(1680, 1050));
-        setResizable(false);
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1680, 1050));
         jPanel1.setLayout(null);

@@ -66,7 +66,6 @@ public class Operaciones extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(1680, 1050));
         setMinimumSize(new java.awt.Dimension(1680, 1050));
         setPreferredSize(new java.awt.Dimension(1680, 1050));
-        setResizable(false);
 
         jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jPanel3.setLayout(null);
