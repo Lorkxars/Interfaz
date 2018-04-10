@@ -38,6 +38,7 @@ public class Fallo extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -89,6 +90,15 @@ public class Fallo extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(340, 250, 1000, 520);
 
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+        jButton4.setBounds(20, 20, 50, 50);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -125,6 +135,13 @@ public class Fallo extends javax.swing.JFrame {
         this.setVisible(false);
         dispose();
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -166,6 +183,7 @@ public class Fallo extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

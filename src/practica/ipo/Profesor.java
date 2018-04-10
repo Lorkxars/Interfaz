@@ -51,6 +51,7 @@ public class Profesor extends javax.swing.JFrame {
         Ejercicios = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -75,7 +76,7 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Usuarios);
-        Usuarios.setBounds(100, 5, 1480, 340);
+        Usuarios.setBounds(100, 5, 1480, 270);
 
         Historial.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Historial.setText("Historial");
@@ -85,7 +86,7 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Historial);
-        Historial.setBounds(100, 350, 1480, 340);
+        Historial.setBounds(100, 290, 1480, 270);
 
         Ejercicios.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
         Ejercicios.setText("Ejercicios");
@@ -95,8 +96,10 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
         jPanel1.add(Ejercicios);
-        Ejercicios.setBounds(100, 695, 1480, 340);
+        Ejercicios.setBounds(100, 590, 1480, 270);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Adelante1.png"))); // NOI18N
         jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -104,8 +107,10 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(1580, 5, 100, 1030);
+        jButton1.setBounds(1380, 890, 200, 100);
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Atras1.png"))); // NOI18N
         jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -113,7 +118,16 @@ public class Profesor extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(0, 5, 100, 1030);
+        jButton2.setBounds(100, 890, 200, 100);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -183,6 +197,13 @@ public class Profesor extends javax.swing.JFrame {
             dispose();
     }//GEN-LAST:event_HistorialMouseClicked
 
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -224,6 +245,7 @@ public class Profesor extends javax.swing.JFrame {
     private javax.swing.JButton Usuarios;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

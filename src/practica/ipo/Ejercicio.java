@@ -68,6 +68,7 @@ public class Ejercicio extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         jLabel10.setVisible(false);
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -83,7 +84,7 @@ public class Ejercicio extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Introduce los datos del ejercicio");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 1680, 150);
+        jLabel1.setBounds(100, 0, 1480, 150);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel2.setText("Respuesta tipo test:");
@@ -103,29 +104,29 @@ public class Ejercicio extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton1.setText("Si");
         jPanel1.add(jRadioButton1);
-        jRadioButton1.setBounds(530, 370, 48, 50);
+        jRadioButton1.setBounds(530, 370, 43, 50);
 
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jRadioButton2.setText("No");
         jPanel1.add(jRadioButton2);
-        jRadioButton2.setBounds(740, 370, 58, 50);
+        jRadioButton2.setBounds(740, 370, 55, 50);
 
         buttonGroup2.add(jRadioButton3);
         jPanel1.add(jRadioButton3);
-        jRadioButton3.setBounds(200, 500, 20, 24);
+        jRadioButton3.setBounds(200, 500, 20, 21);
 
         buttonGroup2.add(jRadioButton4);
         jPanel1.add(jRadioButton4);
-        jRadioButton4.setBounds(900, 500, 22, 24);
+        jRadioButton4.setBounds(900, 500, 21, 21);
 
         buttonGroup2.add(jRadioButton5);
         jPanel1.add(jRadioButton5);
-        jRadioButton5.setBounds(200, 630, 22, 24);
+        jRadioButton5.setBounds(200, 630, 21, 21);
 
         buttonGroup2.add(jRadioButton6);
         jPanel1.add(jRadioButton6);
-        jRadioButton6.setBounds(900, 630, 22, 24);
+        jRadioButton6.setBounds(900, 630, 21, 21);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel4.setText("4)");
@@ -139,7 +140,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField2);
-        jTextField2.setBounds(970, 620, 480, 39);
+        jTextField2.setBounds(970, 620, 480, 35);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("1)");
@@ -163,7 +164,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField3);
-        jTextField3.setBounds(260, 490, 480, 39);
+        jTextField3.setBounds(260, 490, 480, 35);
 
         jTextField4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField4.addActionListener(new java.awt.event.ActionListener() {
@@ -172,7 +173,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField4);
-        jTextField4.setBounds(260, 620, 480, 39);
+        jTextField4.setBounds(260, 620, 480, 35);
 
         jTextField5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
@@ -181,7 +182,7 @@ public class Ejercicio extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextField5);
-        jTextField5.setBounds(970, 490, 480, 39);
+        jTextField5.setBounds(970, 490, 480, 35);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel8.setText("Enunciado");
@@ -241,6 +242,15 @@ public class Ejercicio extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/TickVerde.jpg"))); // NOI18N
         jPanel1.add(jLabel10);
         jLabel10.setBounds(1340, 910, 70, 70);
+
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton7);
+        jButton7.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -345,6 +355,13 @@ public class Ejercicio extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButton3MouseClicked
 
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton7MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -387,6 +404,7 @@ public class Ejercicio extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;

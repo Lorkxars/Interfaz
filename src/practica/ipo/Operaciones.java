@@ -58,9 +58,9 @@ public class Operaciones extends javax.swing.JFrame {
         Suma = new javax.swing.JButton();
         Resta = new javax.swing.JButton();
         Multiplicacion = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -71,7 +71,7 @@ public class Operaciones extends javax.swing.JFrame {
         jPanel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jPanel3.setLayout(null);
 
-        Empezar.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        Empezar.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         Empezar.setText("Empezar");
         Empezar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -79,13 +79,13 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Empezar);
-        Empezar.setBounds(692, 439, 280, 240);
+        Empezar.setBounds(690, 440, 210, 120);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("¿Qué quieres hacer hoy?");
         jPanel3.add(jLabel5);
-        jLabel5.setBounds(0, 0, 1680, 130);
+        jLabel5.setBounds(100, 0, 1480, 130);
 
         Division.setBackground(new java.awt.Color(255, 133, 255));
         Division.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -96,7 +96,7 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Division);
-        Division.setBounds(830, 570, 730, 440);
+        Division.setBounds(900, 560, 590, 310);
 
         Suma.setBackground(new java.awt.Color(145, 206, 189));
         Suma.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -112,7 +112,7 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Suma);
-        Suma.setBounds(100, 130, 730, 440);
+        Suma.setBounds(100, 130, 590, 310);
 
         Resta.setBackground(new java.awt.Color(253, 223, 107));
         Resta.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
@@ -123,24 +123,26 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(Resta);
-        Resta.setBounds(830, 130, 730, 440);
+        Resta.setBounds(900, 130, 590, 310);
 
         Multiplicacion.setBackground(new java.awt.Color(139, 226, 255));
-        Multiplicacion.setFont(new java.awt.Font("Tahoma", 0, 100)); // NOI18N
+        Multiplicacion.setFont(new java.awt.Font("Tahoma", 0, 80)); // NOI18N
         Multiplicacion.setText("Multiplicación");
         Multiplicacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 MultiplicacionMouseClicked(evt);
             }
         });
+        Multiplicacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MultiplicacionActionPerformed(evt);
+            }
+        });
         jPanel3.add(Multiplicacion);
-        Multiplicacion.setBounds(100, 570, 730, 440);
+        Multiplicacion.setBounds(100, 560, 590, 310);
 
-        jButton7.setFont(new java.awt.Font("Tahoma", 0, 72)); // NOI18N
-        jButton7.setText("Tira");
-        jPanel3.add(jButton7);
-        jButton7.setBounds(480, 480, 230, 90);
-
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Adelante1.png"))); // NOI18N
         jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -148,8 +150,10 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton1);
-        jButton1.setBounds(1560, 130, 100, 880);
+        jButton1.setBounds(1290, 890, 200, 100);
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Atras1.png"))); // NOI18N
         jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -157,7 +161,16 @@ public class Operaciones extends javax.swing.JFrame {
             }
         });
         jPanel3.add(jButton2);
-        jButton2.setBounds(0, 130, 100, 880);
+        jButton2.setBounds(100, 890, 200, 100);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jPanel3.add(jButton3);
+        jButton3.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -274,6 +287,17 @@ public class Operaciones extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_EmpezarMouseClicked
 
+    private void MultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MultiplicacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MultiplicacionActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -317,7 +341,7 @@ public class Operaciones extends javax.swing.JFrame {
     private javax.swing.JButton Suma;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables

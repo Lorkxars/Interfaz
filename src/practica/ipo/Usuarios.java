@@ -62,6 +62,7 @@ public class Usuarios extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel8.setVisible(false);
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -84,7 +85,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(790, 100, 220, 900);
+        jScrollPane1.setBounds(790, 100, 220, 750);
 
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Alfredo", "Bea", "Manuel", "Pedro", " " };
@@ -94,7 +95,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jList2);
 
         jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(100, 100, 220, 900);
+        jScrollPane2.setBounds(100, 100, 220, 750);
 
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "A", "B", "A", "C" };
@@ -104,7 +105,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jList3);
 
         jPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(330, 100, 220, 900);
+        jScrollPane3.setBounds(330, 100, 220, 750);
 
         jList4.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Suma, Resta", "División", "Multiplicación", "Suma" };
@@ -119,7 +120,7 @@ public class Usuarios extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jList4);
 
         jPanel1.add(jScrollPane4);
-        jScrollPane4.setBounds(560, 100, 220, 900);
+        jScrollPane4.setBounds(560, 100, 220, 750);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("Administrar");
@@ -141,6 +142,8 @@ public class Usuarios extends javax.swing.JFrame {
         jPanel1.add(jLabel4);
         jLabel4.setBounds(560, 40, 220, 40);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Adelante1.png"))); // NOI18N
         jButton1.setText("Avanzar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -148,7 +151,7 @@ public class Usuarios extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(1570, 100, 80, 900);
+        jButton1.setBounds(1440, 890, 200, 100);
 
         jButton2.setText("Volver");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -157,7 +160,7 @@ public class Usuarios extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton2);
-        jButton2.setBounds(10, 100, 80, 900);
+        jButton2.setBounds(100, 890, 200, 100);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("Contraseña:");
@@ -194,6 +197,15 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/TickVerde.jpg"))); // NOI18N
         jPanel1.add(jLabel8);
         jLabel8.setBounds(1310, 580, 70, 70);
+
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton4);
+        jButton4.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -249,6 +261,13 @@ public class Usuarios extends javax.swing.JFrame {
         jLabel8.setVisible(true);
     }//GEN-LAST:event_jButton3MouseClicked
 
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton4MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -288,6 +307,7 @@ public class Usuarios extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

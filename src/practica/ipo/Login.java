@@ -77,6 +77,11 @@ public class Login extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton2KeyPressed(evt);
+            }
+        });
         jPanel2.add(jButton2);
         jButton2.setBounds(450, 480, 360, 130);
 
@@ -121,6 +126,20 @@ public class Login extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
+        if (User.getText().equals("admin")&& Pass.getText().equals("admin")){
+            Profesor p = new Profesor();
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }else{
+            Alumnos p = new Alumnos();//Creamos la siguiente ventana y cerramos esta
+            p.setVisible(true);
+            this.setVisible(false);
+            dispose();
+        }
+    }//GEN-LAST:event_jButton2KeyPressed
 
     /**
      * @param args the command line arguments

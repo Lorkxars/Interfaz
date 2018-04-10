@@ -50,6 +50,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -69,7 +70,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(110, 150, 250, 800);
+        jScrollPane1.setBounds(110, 150, 250, 710);
 
         jList2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList2.setModel(new javax.swing.AbstractListModel<String>() {
@@ -80,7 +81,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jList2);
 
         jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(380, 150, 250, 800);
+        jScrollPane2.setBounds(380, 150, 250, 710);
 
         jList3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList3.setModel(new javax.swing.AbstractListModel<String>() {
@@ -91,7 +92,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jList3);
 
         jPanel1.add(jScrollPane3);
-        jScrollPane3.setBounds(920, 150, 250, 800);
+        jScrollPane3.setBounds(920, 150, 250, 710);
 
         jList4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList4.setModel(new javax.swing.AbstractListModel<String>() {
@@ -102,7 +103,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jScrollPane4.setViewportView(jList4);
 
         jPanel1.add(jScrollPane4);
-        jScrollPane4.setBounds(650, 150, 250, 800);
+        jScrollPane4.setBounds(650, 150, 250, 710);
 
         jList5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jList5.setModel(new javax.swing.AbstractListModel<String>() {
@@ -118,7 +119,7 @@ public class HistoProfe extends javax.swing.JFrame {
         jScrollPane5.setViewportView(jList5);
 
         jPanel1.add(jScrollPane5);
-        jScrollPane5.setBounds(1190, 150, 250, 800);
+        jScrollPane5.setBounds(1190, 150, 250, 710);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -150,6 +151,8 @@ public class HistoProfe extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(920, 70, 250, 50);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Atras1.png"))); // NOI18N
         jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -157,7 +160,7 @@ public class HistoProfe extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(10, 70, 90, 880);
+        jButton1.setBounds(100, 890, 200, 100);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jButton2.setText("Crear Ejercicio");
@@ -169,6 +172,15 @@ public class HistoProfe extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(1460, 460, 210, 120);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jButton3);
+        jButton3.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -210,6 +222,13 @@ public class HistoProfe extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jList5MouseClicked
 
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();
+    }//GEN-LAST:event_jButton3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -248,6 +267,7 @@ public class HistoProfe extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -44,6 +44,7 @@ public class Alumnos extends javax.swing.JFrame {
         jButton9 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1680, 1050));
@@ -63,7 +64,7 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton8);
-        jButton8.setBounds(100, 510, 1465, 510);
+        jButton8.setBounds(100, 510, 1465, 350);
 
         jButton9.setFont(new java.awt.Font("Tahoma", 0, 150)); // NOI18N
         jButton9.setText("Historial");
@@ -81,8 +82,10 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton9);
-        jButton9.setBounds(100, 0, 1465, 510);
+        jButton9.setBounds(100, 100, 1465, 350);
 
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Atras1.png"))); // NOI18N
         jButton1.setText("Volver");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -90,16 +93,33 @@ public class Alumnos extends javax.swing.JFrame {
             }
         });
         jPanel4.add(jButton1);
-        jButton1.setBounds(0, 0, 100, 1020);
+        jButton1.setBounds(100, 890, 200, 100);
 
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Adelante1.png"))); // NOI18N
         jButton2.setText("Avanzar");
+        jButton2.setToolTipText("");
         jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton2MouseClicked(evt);
             }
         });
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton2);
-        jButton2.setBounds(1565, 0, 100, 1020);
+        jButton2.setBounds(1360, 890, 200, 100);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Fotos/Home.png"))); // NOI18N
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
+        jPanel4.add(jButton3);
+        jButton3.setBounds(20, 20, 50, 50);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -165,6 +185,16 @@ public class Alumnos extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton2MouseClicked
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        Login p = new Login();
+        p.setVisible(true);
+        this.setVisible(false);
+        dispose();    }//GEN-LAST:event_jButton3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -203,6 +233,7 @@ public class Alumnos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JPanel jPanel4;
