@@ -87,7 +87,7 @@ public class Operacion1 extends javax.swing.JFrame {
 
         buttonGroup1.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jRadioButton4.setText("A ti que te importa");
+        jRadioButton4.setText("Ninguna es cierta");
         jPanel1.add(jRadioButton4);
         jRadioButton4.setBounds(1100, 720, 400, 37);
 

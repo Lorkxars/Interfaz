@@ -17,7 +17,7 @@ public class Operaciones extends javax.swing.JFrame {
     /**
      * Creates new form Operaciones
      */
-    private boolean s, r, m, d, mierda;
+    private boolean s, r, m, d, pulsado;
 
     public Operaciones() {
         initComponents();
@@ -246,39 +246,39 @@ public class Operaciones extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void EmpezarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EmpezarMouseClicked
-        mierda = true;
-        Random tuputamadre = new Random();// :)
-        int i = tuputamadre.nextInt(4);
-        while (mierda) {
+        pulsado = true;
+        Random rand = new Random();// :)
+        int i = rand.nextInt(4);
+        while (pulsado) {
             if(!s && !r && !m && !d){
-                mierda = false;
+                pulsado = false;
             }
             if (s && i == 0) {
                 Suma p = new Suma();
                 p.setVisible(true);
                 this.setVisible(false);
-                mierda = false;
+                pulsado = false;
                 dispose();
             }
             if (r && i == 1) {
                 Operacion1 p = new Operacion1();
                 p.setVisible(true);
                 this.setVisible(false);
-                mierda = false;
+                pulsado = false;
                 dispose();
             }
             if (m && i == 2) {
                 Multiplicacion p = new Multiplicacion();
                 p.setVisible(true);
                 this.setVisible(false);
-                mierda = false;
+                pulsado = false;
                 dispose();
             }
             if (d && i == 3) {
                 Division p = new Division();
                 p.setVisible(true);
                 this.setVisible(false);
-                mierda = false;
+                pulsado = false;
                 dispose();
             }
             i++;
