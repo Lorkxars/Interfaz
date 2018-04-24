@@ -71,7 +71,7 @@ public class Accesibilidad extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
-        Login p = new Login();
+        Daltonismo p = new Daltonismo();
         p.setVisible(true);
         this.setVisible(false);
         dispose();
